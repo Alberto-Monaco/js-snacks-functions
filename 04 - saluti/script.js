@@ -7,7 +7,8 @@ function saluto(name) {
 	let saluto = []
 	saluto[1] = name
 	saluto[0] = 'Ciao'
-	return `${saluto[0]} ${saluto[1]}`
+	saluto = saluto.join(' ')
+	return saluto
 }
 
 // Invoca la funzione qui e stampa il risultato in console
