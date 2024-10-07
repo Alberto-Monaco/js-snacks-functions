@@ -1,14 +1,12 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
 const word = 'javascript'
-let vocali_array = []
+
 // Dichiara la funzione qui.
 function conta_vocali(word) {
 	let vocali = 0
-
+	let vocali_array = []
 	let word_divise = word.split('')
-	console.log(word_divise)
-
 	for (let i = 0; i < word.length; i++) {
 		if (
 			word_divise[i] == 'a' ||
@@ -21,7 +19,6 @@ function conta_vocali(word) {
 			vocali_array.push(word_divise[i])
 		}
 	}
-	vocali_array.join(' , ')
 	return console.log(`${vocali} (${vocali_array.join(', ')})`)
 }
 
