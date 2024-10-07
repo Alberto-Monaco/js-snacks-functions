@@ -19,7 +19,8 @@ function saluto(name) {
 	} else {
 		saluto[0] = 'Buonasera'
 	}
-	return `${saluto[0]} ${saluto[1]}`
+	saluto = saluto.join(' ')
+	return saluto
 }
 
 // Invoca la funzione qui e stampa il risultato in console

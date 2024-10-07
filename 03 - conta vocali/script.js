@@ -21,11 +21,11 @@ function conta_vocali(word) {
 			vocali_array.push(word_divise[i])
 		}
 	}
-	return vocali
+	vocali_array.join(' , ')
+	return `${vocali} (${vocali_array.join(', ')})`
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 console.log(conta_vocali(word))
-console.log(vocali_array)
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
