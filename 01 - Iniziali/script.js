@@ -5,7 +5,7 @@ let initial_name = []
 // Dichiara la funzione qui.
 function initial_letter(names) {
 	for (let i = 0; i < names.length; i++) {
-		initial_name[i] = names[i].charAt(0)
+		initial_name.push(names[i].charAt(0))
 	}
 	return initial_name
 }
