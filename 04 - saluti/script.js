@@ -8,10 +8,10 @@ function saluto(name) {
 	saluto[1] = name
 	saluto[0] = 'Ciao'
 	saluto = saluto.join(' ')
-	return saluto
+	return console.log(saluto)
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(saluto(name))
+saluto(name)
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
