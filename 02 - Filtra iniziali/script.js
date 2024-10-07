@@ -7,9 +7,7 @@ let initial_name = []
 function initial_letter(letter, names) {
 	for (let i = 0; i < names.length; i++) {
 		if (letter == names[i].charAt(0)) {
-			initial_name[i] = names[i]
-		} else {
-			initial_name[i] = ''
+			initial_name.push(names[i])
 		}
 	}
 	return initial_name
