@@ -5,9 +5,10 @@ const word = 'javascript'
 // Dichiara la funzione qui.
 function conta_vocali(word) {
 	let vocali = 0
+	let vocals = ['a', 'e', 'i', 'o', 'u']
 	let vocali_array = []
 	for (let i = 0; i < word.length; i++) {
-		if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u') {
+		if (vocals.includes(word[i])) {
 			vocali += 1
 			vocali_array.push(word[i])
 		}
