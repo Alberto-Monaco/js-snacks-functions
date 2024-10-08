@@ -11,9 +11,9 @@ const name = 'Mario'
 function greetings(name) {
 	let saluto
 	let hours = new Date().getHours()
-	if (hours < 13) {
+	if (hours <= 13) {
 		saluto = 'Buongiorno'
-	} else if (13 < hours && hours < 17) {
+	} else if (13 < hours && hours <= 17) {
 		saluto = 'Buon pomeriggio'
 	} else {
 		saluto = 'Buonasera'
