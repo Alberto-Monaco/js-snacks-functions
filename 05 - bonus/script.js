@@ -9,7 +9,6 @@ const name = 'Mario'
 
 // Dichiara la funzione qui.
 function greetings(name) {
-	let message
 	let saluto
 	let hours = new Date().getHours()
 	if (hours < 13) {
@@ -19,8 +18,7 @@ function greetings(name) {
 	} else {
 		saluto = 'Buonasera'
 	}
-	message = `${saluto} ${name}`
-	return message
+	return `${saluto} ${name}`
 }
 
 // Invoca la funzione qui e stampa il risultato in console
