@@ -3,7 +3,7 @@
 const name = 'Mario'
 
 // Dichiara la funzione qui.
-function saluto(name) {
+function greetings(name) {
 	let saluto = []
 	saluto[1] = name
 	saluto[0] = 'Ciao'
@@ -12,6 +12,6 @@ function saluto(name) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(saluto(name))
+console.log(greetings(name))
 
 //Risultato atteso se si passa 'Mario': // ciao Mario

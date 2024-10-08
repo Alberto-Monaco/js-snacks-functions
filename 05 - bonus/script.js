@@ -8,7 +8,7 @@ e buonasera se è sera (oltre le 17)
 const name = 'Mario'
 
 // Dichiara la funzione qui.
-function saluto(name) {
+function greetings(name) {
 	let message
 	let saluto
 	let hours = new Date().getHours()
@@ -24,6 +24,6 @@ function saluto(name) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(saluto(name))
+console.log(greetings(name))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
