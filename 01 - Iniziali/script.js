@@ -8,10 +8,10 @@ function initial_letter(names) {
 	for (let i = 0; i < names.length; i++) {
 		initial_name.push(names[i].charAt(0))
 	}
-	return console.log(initial_name)
+	return initial_name
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-initial_letter(names)
+console.log(initial_letter(names))
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
