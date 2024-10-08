@@ -9,17 +9,16 @@ const name = 'Mario'
 
 // Dichiara la funzione qui.
 function saluto(name) {
-	let saluto = []
-	saluto[1] = name
+	let saluto
 	const hours = new Date().getHours()
 	if (hours < 13) {
-		saluto[0] = 'Buongiorno'
+		saluto = 'Buongiorno'
 	} else if (13 < hours && hours < 17) {
-		saluto[0] = 'Buon pomeriggio'
+		saluto = 'Buon pomeriggio'
 	} else {
-		saluto[0] = 'Buonasera'
+		saluto = 'Buonasera'
 	}
-	saluto = saluto.join(' ')
+	saluto = `${saluto} ${name}`
 	return saluto
 }
 
