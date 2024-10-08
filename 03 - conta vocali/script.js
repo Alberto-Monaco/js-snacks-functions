@@ -6,17 +6,10 @@ const word = 'javascript'
 function conta_vocali(word) {
 	let vocali = 0
 	let vocali_array = []
-	let word_divise = word.split('')
 	for (let i = 0; i < word.length; i++) {
-		if (
-			word_divise[i] == 'a' ||
-			word_divise[i] == 'e' ||
-			word_divise[i] == 'i' ||
-			word_divise[i] == 'o' ||
-			word_divise[i] == 'u'
-		) {
+		if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u') {
 			vocali += 1
-			vocali_array.push(word_divise[i])
+			vocali_array.push(word[i])
 		}
 	}
 	return `${vocali} (${vocali_array.join(', ')})`
