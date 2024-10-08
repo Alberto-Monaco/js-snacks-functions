@@ -20,10 +20,10 @@ function saluto(name) {
 		saluto[0] = 'Buonasera'
 	}
 	saluto = saluto.join(' ')
-	return console.log(saluto)
+	return saluto
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-saluto(name)
+console.log(saluto(name))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
