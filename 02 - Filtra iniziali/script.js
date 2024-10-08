@@ -10,11 +10,11 @@ function initial_letter(letter, names) {
 			initial_name.push(names[i])
 		}
 	}
-	return console.log(initial_name)
+	return initial_name
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-initial_letter('A', names)
+console.log(initial_letter('A', names))
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
